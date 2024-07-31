@@ -1,0 +1,327 @@
+/* 
+navbar
+*/
+.navbar {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent !important;
+}
+.nav-item {
+    padding-right: 8px;
+}
+.nav-link i {
+    padding-right: 8px;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    
+    
+}
+/* css/style.css に追加 */
+.navbar-scrolled {
+    background-color: rgb(222, 217, 217) !important; /* 好みの色に変更 */
+    transition: background-color 1s;
+}
+.navbar-expanded {
+    background-color: rgb(222, 217, 217) !important; /* 好みの色に変更 */
+    transition: background-color 0.5s;
+}
+
+/* 
+carousel
+*/
+.carousel {
+    margin-top : 70px;
+    width:100%;
+
+}
+.carousel-item img {
+    height: 500px;
+    object-fit:cover;
+}
+/*
+about
+*/
+.about {
+    padding-top : 100px;
+   
+}
+
+.about-title {
+    text-align: center;
+}
+.about-title h2{
+    font-size: 1.5rem;
+}
+.underbar {
+    height: 2px;
+    width: 300px;
+    background-color: rgb(222, 217, 217);
+    border-radius: 0.5;
+    display: inline-block;
+}
+
+.card {
+    margin-top : 30px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width:767px) {
+    .about-img img {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+/* 
+menu
+*/
+.menu {
+    padding-top : 100px;
+}
+
+.card-title {
+    background-color: rgba(56, 56, 56, 0.167);
+}
+
+.homeo img {
+    height: 200px;
+    width: 100%;
+}
+
+@media (max-width:990px) {
+    .card-group {
+        flex-flow: column;
+    }
+}
+/* 
+const
+*/
+.cost {
+    padding-top : 100px;
+}
+.cost-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.cost-card {
+    width: 100px;
+    height: 100px;
+    border: black solid thin;
+    border-radius: 50%;
+}
+.list-group-item i {
+    padding-right: 30px;
+    width: 20px;
+    height: auto;
+
+}
+.cost-discription {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+@media (max-width:990px) {
+    .cost-discription {
+        flex-flow: column;
+    }
+}
+/* 
+reservation-access
+*/
+.reservation-access {
+    padding-top: 100px;
+}
+
+.reservation-access-scadule {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.table {
+    width: 70%;
+    
+}
+@media (max-width:990px) {
+    .reservation-access-scadule {
+        flex-flow: column;
+        width: 100%;
+        
+    }
+    .table {
+        width: 100%;
+        margin: auto;
+    }
+    
+
+}
+.reservation-access-map {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.card {
+    width: 100%;
+}
+@media (max-width:990px) {
+    .reservation-access-map {
+        flex-flow: column;
+    }
+}
+
+/* 
+contact
+*/
+.contact {
+    padding-top : 100px;
+}
+
+.contact-discription {
+    margin: 20px 0 20px 0;
+}
+
+#contactForm {
+    width: 60%;
+    margin: auto;
+}
+
+.radio-group {
+    display: flex;
+}
+.radio-group div {
+    margin-right: 10px;
+}
+
+/* 
+link
+*/
+.link {
+    padding-top: 100px;
+}
+.d-grid {
+    margin-top: 30px;
+}
+.link-img {
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width:990px) {
+    .link-img {
+        flex-flow: column;
+    }
+    #carouselExampleFade div{
+        height: 200px;
+        object-fit:cover;        
+    }
+    #carouselExampleFade button {
+        bottom: 30%;
+        
+      }
+}
+a .btn {
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 100%;
+	margin-bottom: 8px;
+	padding: 1rem 4rem;
+	color: #fff;
+	font-weight: bold;
+	background: #27acd9;
+	position: relative;
+	transition: 0.3s ease-in-out;
+}
+a .btn:hover {
+    background: #fff;
+    color: #27acd9;
+}
+a .btn:before, a .btn:after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+a .btn:before {
+  top: 0;
+  left: 0;
+}
+a .btn:after {
+  bottom: 0;
+  right: 0;
+}
+a .btn:hover:before, a .btn:hover:after {
+  width: 100%;
+  height: 100%;
+}
+a .btn:hover:before {
+  border-top-color: #27acd9;
+  border-right-color: #27acd9;
+  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+a .btn:hover:after {
+  border-bottom-color: #27acd9;
+  border-left-color: #27acd9;
+  transition: border-color 0s ease-out 0.2s, width 0.15s ease-out 0.2s, height 0.15s ease-out 0.3s;
+}
+.btn {
+    width: 100%;
+    
+}
+#carouselExampleFade{
+    margin: 0;
+    
+}
+#carouselExampleFade button {
+  top: 40%;
+  
+}
+#carouselExampleFade div div img{
+    height: 385px;
+    object-fit:cover;
+    
+}
+
+/* 
+footer
+*/
+.footer {
+    margin-top: 120px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(222, 217, 217);
+    
+}
+.footer p {
+    width: 100%;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+@media (max-width:990px) {
+    .footer {
+        margin-top: 350px;
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+  

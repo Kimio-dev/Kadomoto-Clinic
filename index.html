@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/sanitize.css" rel="css/sanitize.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>門元治療院</title>
+</head>
+<body class="container">
+
+  <!-- nav -->
+  <nav  id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">門元治療院 </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#about"><i class="fa-solid fa-house"></i>治療院について</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu"><i class="fa-solid fa-list"></i>治療メニュー</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cost"><i class="fa-solid fa-yen-sign"></i>料金表</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservation-access"><i class="fa-solid fa-calendar-days"></i>予約とアクセス</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-address-book"></i>問い合わせ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#link"><i class="fa-solid fa-link"></i>リンク</a></li>
+          
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="tel:XXX-XXXX-XXXX"><i class="fa-solid fa-phone"></i>XXX-XXXX-XXXX</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <section class="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt=""  >
+          <div class="carousel-caption d-none d-md-block">
+            <h5>患者に合った治療</h5>
+            <!-- <p>Some representative placeholder content for the first slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1597496841643-3f18202e55d8?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="" >
+          <div class="carousel-caption d-none d-md-block">
+            <h5>笑顔のために</h5>
+            <!-- <p>Some representative placeholder content for the second slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="" >
+          <div class="carousel-caption d-none d-md-block">
+            <h5>自然エネルギーの利用</h5>
+            <!-- <p>Some representative placeholder content for the third slide.</p> -->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  
+  <div data-bs-spy="scroll" data-bs-target="#carouselExampleCaptions" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    
+    <!-- about -->
+    <section id="about" class="about animate-on-scroll">
+      <div class="about-title">
+        <h2>治療院について</h2>
+        <div class="underbar"></div>
+      </div>
+      
+      <div class="card mb-3" ">
+        <div class="row g-0">
+          <div class="col-md-4 about-img">
+            <img src="https://images.unsplash.com/photo-1700041785712-649e859d9909?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">門元節夫</h5>
+              <p class="card-text">18才より治療の道に入り<span id="years"></span>年目になりました。<br>
+                鍼灸(関西鍼灸専門学校3年)、酵母温湿布療法、カイロプラクティック(酵母の家14年研修)、ガンステッド・テクニック、SOT・テクニック、ディバーシファイド・テクニック、上部頚椎・テクニック、トムソン・テクニック、B.K・テクニック、オーリングテスト、オーラソーマ、キネシオロジー(タッチフォーヘルス、ブレイジム)、ヒーリング、カウンセリング、オステオパシー、アーユルベーダー、ホメオパシー(ロイヤルアカデミーホメオパシー４年)
+                10年前に東洋医学セミナーに出会い、色々な治療法が、個々の点から線につながりました。</p>
+              <p class="card-text">はじめに<br>
+                忙しく日々の生活に追われていると、体の使い方、心の持ち方が偏り、身体や気分が優れなくなってきます。門本治療院では、心や体を酷使して硬くなった筋肉、関節を緩め、脊椎を調整し、過剰な気のバランスを整えます。
+                正しい姿勢、心持ちになると、血液循環、神経作用が活性化し自己治癒力が旺盛になり、自然と疲れにくい健康な体が身についてゆきます。</p>
+              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu -->
+    <section id="menu" class="menu animate-on-scroll">
+      <div class="about-title">
+        <h2>治療メニュー</h2>
+        <div class="underbar"></div>
+      </div>
+      
+      <div class="card-group">
+        <div class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1674841252680-652b820914ba?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">酵母温湿布治療</h5>
+            <p class="card-text">酵母原液を含ませたタオルで全身を包み、じっくり20分温めていきます。途中、タオルを交換しながら、背中や下肢に自家製無農薬のびわの葉・エキス、アロエ・エキス、カモミール・エキスでマッサージしていきます。
+              身体に負担をかけることなく、無理なく発汗を促します。
+              新陳代謝を活発にし、免疫機能をを高めていきます。
+              リラックスして、筋肉を柔らかくするので、その後のカイロプラクティック療法の効果をより高めます。</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1645005512968-0c1fe99f0093?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">カイロプラクティック療法</h5>
+            <p class="card-text">脊椎の変位によって神経が干渉されると、生命力の伝達が妨げられます。
+              カイロプラクティックは、この脊椎の変位を見つけ、手の技術によって正しく元に戻し健康を回復させる療法です。</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1661779360652-b067e858ad02?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">鍼・灸（はり・きゅう）治療</h5>
+            <p class="card-text">約2000年前に体系化された鍼灸医学は、体に血管系、神経系とは違う経絡という気の通り道が全身を循環し、心身を維持管理していると考えています。
+              治療では、気の流れが滞っているところを感知し、経穴（ツボ）を刺激し、自律神経のバランスを改善し、組織や、内蔵を活性化し治癒に導いていく方法です。</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" ">
+        <div class="row g-0">
+          <div class="col-md-4 homeo">
+            <img src="https://images.unsplash.com/photo-1682978900142-9ab110f7a868?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">ホメオパシー</h5>
+              <p class="card-text">鉱物、植物、動物、医薬品、化学物質、放射線など、あらゆる物質を生命エネルギーに作用させることができる方法を200年前、ドイツのハーネマンによって発見されました。
+                治療法は、レメディーと呼ばれる砂糖玉（物質を際限なくなるまで薄め、振動させたものを染み込ませた）を舌下に入れるだけの簡単な方法です。
+                ホメオパシー・レメディーが作用する身体は、肉体の部分ではなく、気の身体(エーテル体)、感情の身体(アストラル体)、思考の身体(メンタル体)の3つの身体に作用し肉体に影響を及ぼすものと見られます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cost -->
+    <section id="cost" class="cost animate-on-scroll">
+      <div class="about-title">
+        <h2>料金表(消費税込み)</h2>
+        <div class="underbar"></div>
+      </div>
+
+      <div class="cost-discription">
+        <ul class="list-group">
+          <li class="list-group-item"><i class="fa-solid fa-user"></i>大人 6,000円</li>
+          <li class="list-group-item"><i class="fa-solid fa-graduation-cap"></i>学生 5,000円</li>
+          <li class="list-group-item"><i class="fa-solid fa-child"></i>小学生 4,000円</li>
+          <li class="list-group-item"><i class="fa-solid fa-baby"></i>幼児 3,000円</li>
+          <li class="list-group-item">※初めての方は、別途4,000円頂いております。</li>
+          <li class="list-group-item">※延長の場合、別途4,000円/時間頂いております。(予約の都合上延長できない場合があります。)</li>
+        </ul>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">治療時間の目安は大人で1時間、幼児で30分以内です。</li>
+          <li class="list-group-item">お初めての方は約1時間半の予定でいらして下さい。</li>
+          <li class="list-group-item">遠方から来られる方や、集中的に治療をされたい方はお知らせ下さい。</li>
+          <li class="list-group-item">ホメオパシーの相談も承っております。別途レメディー代が必要です。</li>
+          <li class="list-group-item">大崎上島分院では酵母温湿布やホメオパシーレメディーは準備しておりません。鍼灸・整骨治療を中心に行っております。</li>
+          <li class="list-group-item">大崎上島分院での治療費は上記より1,000円差し引いた治療費になります。</li>
+          <li class="list-group-item"></li>
+        </ul>
+      </div>
+      
+        
+      </div>
+    </section>
+
+    <!-- reservation-access -->
+    <section id="reservation-access" class="reservation-access animate-on-scroll">
+      <div class="about-title">
+        <h2>予約とアクセス</h2>
+        <div class="underbar"></div>
+      </div>
+      
+      <div class="reservation-access-scadule">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">診療時間</th>
+              <th scope="col">月</th>
+              <th scope="col">火</th>
+              <th scope="col">水</th>
+              <th scope="col">木</th>
+              <th scope="col">金</th>
+              <th scope="col" class="sat">土</th>
+              <th scope="col" class="sun">日</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">9:00〜17:00</th>
+              <td>×</td><!-- 月 -->
+              <td>×</td><!-- 火 -->
+              <td>〇</td><!-- 水 -->
+              <td>×</td><!-- 木 -->
+              <td>〇</td><!-- 金 -->
+              <td>〇</td><!-- 土 -->
+              <td>×</td><!-- 日 -->
+            </tr>
+          </tbody>
+        </table>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">水曜日・・・大崎上島分院</li>
+          <li class="list-group-item">金曜日、土曜日・・・比治山本院</li>
+          <li class="list-group-item"></li>
+        </ul>
+      </div>
+      
+
+      <div class="reservation-access-map animate-on-scroll">
+        <div class="card">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.468549180698!2d132.4717482!3d34.3894348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35504185947bd1f5%3A0xeb39e47d74812a80!2z6ZaA5pys5rK755mC6Zmi!5e0!3m2!1sja!2sjp!4v1722051088909!5m2!1sja!2sjp" class="card-img-top" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="card-body">
+            <h5 class="card-title">門本治療院（比治山本院）</h5>
+            <p class="card-text">〒732-8017<br>広島市南区比治山町1-22 アーバンスクエア比治山201<br><i class="fa-solid fa-phone"></i> XXX-XXXX-XXXX (金・土)</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.572698606166!2d132.88776997518502!3d34.233927408115946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355040425eb51e1b%3A0xa01345c8e0e781b9!2z44CSNzI1LTAzMDEg5bqD5bO255yM6LGK55Sw6YOh5aSn5bSO5LiK5bO255S65Lit6YeO77yT77yX77yU77yW!5e0!3m2!1sja!2sjp!4v1722051599313!5m2!1sja!2sjp" class="card-img-top" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="card-body">
+            <h5 class="card-title">大崎上島分院</h5>
+            <p class="card-text">〒725-0301<br>広島県豊田郡大崎上島町中野3746<br><i class="fa-solid fa-phone"></i> XXX-XXXX-XXXX (水)</p>
+            <p class="card-text"><small class="text-muted">※農作業をしていることが多く、電話にでられないことがあります。後ほど、こちらからご連絡いたします。</small></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    
+    <!-- contact -->
+    <section id="contact" class="contact animate-on-scroll">
+      <div class="about-title">
+        <h2>問い合わせ</h2>
+        <div class="underbar"></div>
+      </div>
+
+      
+      <!-- 実際に稼働する場合はgoogleformかハイパーフォームを使用する -->
+      <form id="contactForm" class="needs-validation" novalidate>
+        
+        <p class="contact-discription">治療等に関する質問や感想などをお受けしています。以下のフォームより、必要事項を入力のうえ送信してください。</p>
+        <!-- 名前 -->
+        <div class="mb-3 name-email">
+          <label for="name" class="form-label">名前</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+          <div class="invalid-feedback">
+            名前を入力してください。
+          </div>        
+        <!-- メールアドレス -->
+          <label for="email" class="form-label">メールアドレス</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+          <div class="invalid-feedback">
+            有効なメールアドレスを入力してください。
+          </div>
+        </div>
+  
+        <!-- 問い合わせ種別 -->
+        
+        <div class="mb-3">
+          <label class="form-label">問い合わせ種別</label>
+          <div class="radio-group">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inquiryType" id="question" value="質問" required>
+              <label class="form-check-label" for="question">
+                質問
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inquiryType" id="consultation" value="相談" required>
+              <label class="form-check-label" for="consultation">
+                相談
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inquiryType" id="other" value="その他" required>
+              <label class="form-check-label" for="other">
+                その他
+              </label>
+            </div>
+          </div>
+          <div class="invalid-feedback">
+            問い合わせ種別を選択してください。
+          </div>
+        </div>
+  
+        <!-- 問い合わせ内容 -->
+        <div class="mb-3">
+          <label for="inquiryDetails" class="form-label">問い合わせ内容</label>
+          <textarea class="form-control" id="inquiryDetails" name="inquiryDetails" rows="3" required></textarea>
+          <div class="invalid-feedback">
+            問い合わせ内容を入力してください。
+          </div>
+        </div>
+  
+        <!-- 送信ボタン -->
+        <button type="submit" class="btn btn-primary">送信</button>
+
+        <p class="contact-discription">個人情報の取扱いについてご記入いただいた個人情報は、お問い合わせへの対応および確認のためにのみ利用します。</p>
+      </form>
+      
+    </section>
+    
+    <!-- link -->
+    <section id="link" class="link animate-on-scroll">
+      <div class="about-title">
+        <h2>リンク</h2>
+        <div class="underbar"></div>
+      </div>
+
+      <div class="link-img">
+        <div class="link-btn">
+          <a href="http://shanti-phula.net/ja"><button class="btn" type="button">シャンティー・フーラ</button></a>
+          <a href="http://aminon.co.jp"><button class="btn" type="button">日本酵母研究会</button></a>
+          <a href="https://toyouke.com"><button class="btn" type="button">日本豊受自然農株式会社</button></a>
+          <a href="https://yogananda.cc"><button class="btn" type="button">ヨガナンダ</button></a>
+          <a href="http://shanti-phula.net/ja/toyo/lp"><button class="btn" type="button">東洋医学セミナー通信講座</button></a>
+          <a href="http://blog.kadomoto.com/"><button class="btn" type="button">自然農園ブログ</button></a>
+        </div>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.unsplash.com/photo-1705218954289-78f24df73922?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1695904255974-1f8511375566?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1483959651481-dc75b89291f1?q=80&w=1898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+
+  <div class="footer">
+    <p>Copyright(c) 2014 Kadomoto Clinic. All Rights Reserved.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+    
+</body>
+</html>
+
